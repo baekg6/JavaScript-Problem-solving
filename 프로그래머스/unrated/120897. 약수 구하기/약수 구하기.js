@@ -1,9 +1,8 @@
 function solution(n) {
     var answer = [];
-    for(let i =0;i<n+1;i++){
-        if (n%i==0){
-            answer.push(i)
-        }
-    }
+    let numbers = Array(n).fill(0).map((_,i)=>i+1)
+    //console.log(numbers)
+    answer = [...numbers.filter(i=>n%i==0)]
+    
     return answer;
 }
