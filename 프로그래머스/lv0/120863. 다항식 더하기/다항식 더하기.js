@@ -7,13 +7,16 @@ function solution(polynomial) {
     
     if(coef){
         if(coef===1){
+            // x의 계수가 1인 경우
             coef=''
         }
         answer.push(coef+'x')
         if(cons){
+            // x항이 존재하면 cons가 0일때 입력할 필요X
             answer.push(cons)
         }
     } else {
+        // x항이 존재하지 않을 때, cons 값이 필요
         answer.push(cons)
     }
     
