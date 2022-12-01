@@ -10,7 +10,7 @@ rl.on('line', function (line) {
     input = line.split(' ');
 }).on('close', function () {
     // console.log(input[0])
-    for(let i =1;i < +input[0]+1 ;i++){
+    for(let i =1;i <= +input[0] ;i++){
         console.log('*'.repeat(i))
     }
 });
